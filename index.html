@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ChiChiq — салон краси в Івано-Франківську · You are special</title>
+<meta name="description" content="ChiChiq — салон краси на вул. Гетьмана Мазепи, 38, Івано-Франківськ. Манікюр і педикюр, брови та вії, макіяж, укладки, стрижки, фарбування. Щодня 09:00–21:00.">
+<meta name="theme-color" content="#f6f1ea">
+<style>
+:root{--milk:#f6f1ea;--cream:#efe6da;--nude:#d9c2ad;--rose:#c9a08a;--ink:#1d1a17;--mute:#6f655c;--line:#e2d7ca;--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--milk);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.serif{font-family:"Cormorant Garamond","Playfair Display",Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.demo{background:var(--ink);color:#f6f1ea;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em}
+header{position:sticky;top:0;z-index:50;background:rgba(246,241,234,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+header.sc{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-size:28px;text-decoration:none}
+.logo b{font-weight:600;font-style:italic}
+.links{display:flex;gap:28px;font-size:14px}
+.links a{text-decoration:none;color:var(--mute);transition:color .2s}
+.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border-radius:999px;background:var(--ink);color:var(--milk);text-decoration:none;font-size:15px;font-weight:500;border:1px solid var(--ink);transition:transform .25s,box-shadow .25s,background .25s;cursor:pointer}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -12px rgba(29,26,23,.5)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.sm{padding:10px 18px;font-size:14px}
+@media(max-width:860px){.links{display:none}}
+/* hero */
+.hero{position:relative;padding:72px 0 90px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--rose);font-weight:600}
+h1{font-size:clamp(46px,7.4vw,96px);line-height:.98;margin:18px 0 22px}
+h1 i{color:var(--rose)}
+.lead{font-size:18px;color:var(--mute);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.meta{display:flex;flex-wrap:wrap;gap:26px;margin-top:40px;font-size:14px;color:var(--mute)}
+.meta strong{display:block;font-size:26px;color:var(--ink);font-weight:500}
+.art{position:relative;aspect-ratio:4/5;border-radius:240px 240px var(--r) var(--r);overflow:hidden;background:radial-gradient(120% 80% at 30% 20%,#fff 0,var(--cream) 40%,var(--nude) 100%);box-shadow:0 40px 80px -40px rgba(120,80,50,.45)}
+.art svg{position:absolute;inset:0;width:100%;height:100%}
+.art .tag{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.8);backdrop-filter:blur(8px);padding:10px 16px;border-radius:999px;font-size:13px}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;z-index:-1}
+@media(max-width:860px){.hero{padding:40px 0 60px}.hero .wrap{grid-template-columns:1fr;gap:36px}.art{max-width:380px;margin:0 auto;width:100%}}
+/* marquee */
+.marq{border-block:1px solid var(--line);overflow:hidden;padding:18px 0;background:var(--cream)}
+.marq div{display:flex;gap:48px;white-space:nowrap;animation:m 30s linear infinite;width:max-content;font-size:24px}
+.marq span::after{content:"🤍";margin-left:48px;font-size:16px}
+@keyframes m{to{transform:translateX(-50%)}}
+section{padding:96px 0}
+.h2{font-size:clamp(36px,5vw,60px);line-height:1.05;margin:12px 0 18px}
+.sub{color:var(--mute);max-width:560px}
+/* services */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:36px 0 26px}
+.tab{padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:14px;cursor:pointer;transition:.2s;color:var(--ink);font-family:inherit}
+.tab.on{background:var(--ink);color:var(--milk);border-color:var(--ink)}
+.list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;transition:transform .3s,box-shadow .3s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(90,60,40,.35)}
+.svc h3{font-size:17px;font-weight:600}
+.svc p{font-size:14px;color:var(--mute)}
+.price{text-align:right;white-space:nowrap;font-size:20px}
+.price small{display:block;font-size:12px;color:var(--mute)}
+.price.tbd{font-size:13px;color:var(--rose);font-style:italic}
+.svc.hide{display:none}
+.note{margin-top:20px;font-size:13px;color:var(--mute)}
+@media(max-width:760px){.list{grid-template-columns:1fr}}
+/* combo */
+.combo{background:var(--ink);color:var(--milk);border-radius:36px;padding:64px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.combo .sub{color:#c9bdb0}
+.combo .btn{background:var(--milk);color:var(--ink);border-color:var(--milk)}
+.steps{display:grid;gap:14px}
+.step{display:flex;gap:16px;align-items:center;padding:16px 18px;border:1px solid rgba(255,255,255,.14);border-radius:18px}
+.step b{width:36px;height:36px;border-radius:50%;background:var(--rose);display:grid;place-items:center;flex:none;color:#fff;font-weight:600}
+@media(max-width:860px){.combo{grid-template-columns:1fr;padding:36px 24px;border-radius:28px}}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;margin-top:40px}
+.ph{border-radius:var(--r);position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:16px;font-size:13px;color:var(--ink)}
+.ph::before{content:"";position:absolute;inset:0;background:var(--g);transition:transform .8s}
+.ph:hover::before{transform:scale(1.07)}
+.ph span{position:relative;background:rgba(255,255,255,.75);padding:6px 12px;border-radius:999px}
+.ph.t{grid-row:span 2}.ph.w{grid-column:span 2}
+@media(max-width:760px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.ph.w{grid-column:span 2}}
+/* reviews */
+.rating{display:flex;align-items:center;gap:22px;margin-top:28px;flex-wrap:wrap}
+.big{font-size:72px;line-height:1}
+.stars{color:var(--rose);letter-spacing:3px;font-size:20px}
+.rev{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:36px 2px 12px;scrollbar-width:none}
+.rev::-webkit-scrollbar{display:none}
+.card{flex:0 0 min(380px,86%);scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.card q{display:block;font-size:20px;line-height:1.4;quotes:"«" "»"}
+.card .who{margin-top:18px;font-size:14px;color:var(--mute)}
+.arrows{display:flex;gap:10px}
+.arr{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:18px}
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:30px}
+.map{border-radius:var(--r);overflow:hidden;min-height:380px;border:1px solid var(--line);background:var(--cream);position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.6) sepia(.15)}
+.hrs{width:100%;border-collapse:collapse;margin:14px 0 22px;font-size:15px}
+.hrs td{padding:9px 0;border-bottom:1px solid var(--line)}
+.hrs td:last-child{text-align:right}
+.hrs tr.today td{font-weight:600}
+.open{display:inline-flex;align-items:center;gap:8px;font-size:13px;padding:6px 12px;border-radius:999px;background:var(--cream)}
+.open i{width:8px;height:8px;border-radius:50%;background:#6aa36f}
+.open.cl i{background:#c46a5a}
+.row{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+@media(max-width:860px){.visit{grid-template-columns:1fr}}
+footer{padding:48px 0 120px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.fab{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;display:none;gap:10px}
+.fab .btn{flex:1;box-shadow:0 14px 30px -12px rgba(29,26,23,.55)}
+@media(max-width:760px){.fab{display:flex}}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="demo">Демо-концепт сайту · підготовлено для ChiChiq · фото та частина цін — заглушки</div>
+<header id="hd"><div class="wrap nav">
+ <a href="#top" class="logo serif">Chi<b>Chiq</b></a>
+ <nav class="links"><a href="#services">Послуги</a><a href="#combo">Образ</a><a href="#gallery">Роботи</a><a href="#reviews">Відгуки</a><a href="#visit">Контакти</a></nav>
+ <a class="btn sm" href="tel:+380731610480">Записатися</a>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="blob" style="width:420px;height:420px;background:#e8cdb8;top:-80px;right:-60px"></div><div class="wrap">
+ <div class="rv">
+  <div class="eyebrow">Салон краси · Івано-Франківськ</div>
+  <h1 class="serif">You are <i>special.</i><br>Ти особлива.</h1>
+  <p class="lead">Манікюр і педикюр, брови та вії, макіяж, укладки, стрижки, фарбування й догляд за волоссям — сильні майстри різних напрямків в одному просторі.</p>
+  <div class="cta"><a class="btn" href="tel:+380731610480">Записатися: 073 161 0480</a><a class="btn ghost" href="https://www.instagram.com/_chichiq_" target="_blank" rel="noopener">Instagram @_chichiq_</a></div>
+  <div class="meta"><div><strong>9.9/10</strong>182 відгуки</div><div><strong>09–21</strong>щодня, без вихідних</div><div><strong>Мазепи, 38</strong>центр міста</div></div>
+ </div>
+ <div class="art rv" aria-hidden="true">
+  <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#c9a08a" stop-opacity=".25"/></linearGradient></defs>
+  <g fill="none" stroke="#1d1a17" stroke-opacity=".55" stroke-width="1.4"><path d="M200 120c-52 0-84 44-84 100 0 40 16 76 40 98 10 9 14 22 14 36v30h60v-30c0-14 4-27 14-36 24-22 40-58 40-98 0-56-32-100-84-100z"/><path d="M116 210c-30-60 10-140 84-140s114 80 84 140"/><path d="M150 230q10 6 22 0M228 230q10 6 22 0M182 300q18 12 36 0"/></g>
+  <circle cx="300" cy="110" r="46" fill="url(#a)"/><circle cx="90" cy="400" r="70" fill="url(#a)"/></svg>
+  <div class="tag">🤍 Місце для фото салону</div>
+ </div>
+</div></section>
+
+<div class="marq" aria-hidden="true"><div class="serif"><span>Манікюр</span><span>Педикюр</span><span>Брови</span><span>Вії</span><span>Макіяж</span><span>Укладки</span><span>Стрижки</span><span>Фарбування</span><span>Манікюр</span><span>Педикюр</span><span>Брови</span><span>Вії</span><span>Макіяж</span><span>Укладки</span><span>Стрижки</span><span>Фарбування</span></div></div>
+
+<section id="services"><div class="wrap">
+ <div class="rv"><div class="eyebrow">Послуги та ціни</div><h2 class="h2 serif">Усе для твого образу</h2><p class="sub">Оберіть напрям. Ціни, що позначені «уточнюється», підтвердить адміністратор під час запису.</p></div>
+ <div class="tabs rv" role="tablist">
+  <button class="tab on" data-f="all">Усі</button><button class="tab" data-f="nails">Нігті</button><button class="tab" data-f="brows">Брови та вії</button><button class="tab" data-f="hair">Волосся</button><button class="tab" data-f="make">Макіяж</button>
+ </div>
+ <div class="list">
+  <div class="svc rv" data-c="nails"><div><h3>Комплекс: зняття, гігієнічний манікюр, покриття гель-лаком</h3><p>≈ 2 год</p></div><div class="price">1 100 ₴</div></div>
+  <div class="svc rv" data-c="brows"><div><h3>Комплекс: корекція + фарбування брів</h3><p>≈ 1 год</p></div><div class="price">700 ₴</div></div>
+  <div class="svc rv" data-c="nails"><div><h3>SPA-педикюр</h3><p>Тривалість уточнюється</p></div><div class="price tbd">ціна уточнюється</div></div>
+  <div class="svc rv" data-c="brows"><div><h3>Нарощення вій</h3><p>Класика та об’єми</p></div><div class="price tbd">ціна уточнюється</div></div>
+  <div class="svc rv" data-c="brows"><div><h3>Ламінування вій</h3><p>Тривалість уточнюється</p></div><div class="price tbd">ціна уточнюється</div></div>
+  <div class="svc rv" data-c="hair"><div><h3>Стрижка та укладання</h3><p>Під ваш тип волосся</p></div><div class="price tbd">ціна уточнюється</div></div>
+  <div class="svc rv" data-c="hair"><div><h3>Фарбування волосся</h3><p>Актуальні техніки</p></div><div class="price tbd">ціна уточнюється</div></div>
+  <div class="svc rv" data-c="hair"><div><h3>Вечірня зачіска</h3><p>Образ під подію</p></div><div class="price tbd">ціна уточнюється</div></div>
+  <div class="svc rv" data-c="hair"><div><h3>Афронарощення волосся</h3><p>Тривалість уточнюється</p></div><div class="price tbd">ціна уточнюється</div></div>
+  <div class="svc rv" data-c="make"><div><h3>Макіяж</h3><p>Денний, вечірній, під подію</p></div><div class="price tbd">ціна уточнюється</div></div>
+ </div>
+ <p class="note">Підтверджені ціни: профіль салону на MAKEUP HUB. Решту салон додасть сам.</p>
+</div></section>
+
+<section id="combo" style="padding-top:0"><div class="wrap"><div class="combo rv">
+ <div><div class="eyebrow" style="color:#e2b9a3">Повний образ за один візит</div><h2 class="h2 serif">Кілька процедур одночасно — без доплат</h2><p class="sub">Можна зібрати повний образ, поєднати кілька процедур одночасно без доплат або просто прийти на свою улюблену.</p><div class="cta"><a class="btn" href="tel:+380731610480">Зібрати мій образ</a></div></div>
+ <div class="steps"><div class="step"><b>1</b>Манікюр + педикюр</div><div class="step"><b>2</b>Брови та вії</div><div class="step"><b>3</b>Укладка + макіяж</div></div>
+</div></div></section>
+
+<section id="gallery" style="padding-top:0"><div class="wrap">
+ <div class="rv"><div class="eyebrow">Роботи майстрів</div><h2 class="h2 serif">Естетика в деталях</h2><p class="sub">Тут будуть реальні роботи з Instagram салону — після погодження з власницею.</p></div>
+ <div class="gal">
+  <div class="ph t rv" style="--g:linear-gradient(160deg,#f3e3d6,#c9a08a)"><span>Волосся</span></div>
+  <div class="ph rv" style="--g:linear-gradient(200deg,#fff,#e5d0bf)"><span>Манікюр</span></div>
+  <div class="ph rv" style="--g:linear-gradient(140deg,#e9d8c8,#b98d78)"><span>Брови</span></div>
+  <div class="ph t rv" style="--g:linear-gradient(180deg,#d9c2ad,#8f6c5c)"><span>Макіяж</span></div>
+  <div class="ph w rv" style="--g:linear-gradient(110deg,#f6f1ea,#d9c2ad 60%,#c9a08a)"><span>Простір салону</span></div>
+ </div>
+</div></section>
+
+<section id="reviews" style="padding-top:0"><div class="wrap">
+ <div class="rv" style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap">
+  <div><div class="eyebrow">Відгуки</div><h2 class="h2 serif">«Свій салон» у Франківську</h2>
+  <div class="rating"><div class="big serif">9.9</div><div><div class="stars">★★★★★</div><div class="sub">182 відгуки · frankivchanka.info</div></div></div></div>
+  <div class="arrows"><button class="arr" data-d="-1" aria-label="Назад">←</button><button class="arr" data-d="1" aria-label="Вперед">→</button></div>
+ </div>
+ <div class="rev" id="rev">
+  <div class="card"><q>Не одразу знайшла «свій салон» у Франківську, але саме з ChiChiq стався метч не тільки з першого погляду, а й з першого візиту.</q><div class="who">Tatyana Lata · січень 2026</div></div>
+  <div class="card"><q>Робила тут макіяж та укладку, результат перевершив очікування. Майстри дуже приємні, уважні до деталей.</q><div class="who">Светлана Задорожная · травень 2026</div></div>
+  <div class="card"><q>Салон стильний, естетичний, привітні дівчата і якісні послуги.</q><div class="who">Яна Liskunova · березень 2026</div></div>
+  <div class="card"><q>Рекомендую майстра по волоссю Євгенію, легка у спілкуванні дівчина і дуже талановита спеціалістка.</q><div class="who">Yuliia Pavlenko · березень 2026</div></div>
+  <div class="card"><q>Майстриня уважно вислухала всі мої побажання, дала професійні поради та запропонувала варіант, який найкраще підійшов саме мені.</q><div class="who">Мар'яна Юхимчук · червень 2026</div></div>
+ </div>
+</div></section>
+
+<section id="visit" style="padding-top:0"><div class="wrap">
+ <div class="rv"><div class="eyebrow">Як нас знайти</div><h2 class="h2 serif">Чекаємо на тебе</h2></div>
+ <div class="visit">
+  <div class="panel rv">
+   <span class="open" id="st"><i></i><em id="stt">Щодня 09:00–21:00</em></span>
+   <h3 class="serif" style="font-size:30px;margin-top:16px">вул. Гетьмана Мазепи, 38</h3>
+   <p class="sub">Івано-Франківськ, 76000</p>
+   <table class="hrs" id="hrs"></table>
+   <div class="row">
+    <a class="btn" href="tel:+380731610480">Подзвонити: 073 161 0480</a>
+    <a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=48.919375,24.702559" target="_blank" rel="noopener">Прокласти маршрут</a>
+    <a class="btn ghost" href="https://www.instagram.com/_chichiq_" target="_blank" rel="noopener">Написати в Instagram</a>
+   </div>
+  </div>
+  <div class="map rv"><iframe loading="lazy" title="Карта: ChiChiq, вул. Гетьмана Мазепи, 38" src="https://www.openstreetmap.org/export/embed.html?bbox=24.6975%2C48.9170%2C24.7075%2C48.9218&layer=mapnik&marker=48.919375%2C24.702559"></iframe></div>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><div><span class="serif" style="font-size:22px;color:var(--ink)">ChiChiq</span><br>You are special! Ти особлива 🤍</div><div>вул. Гетьмана Мазепи, 38 · <a href="tel:+380731610480">073 161 0480</a> · <a href="https://www.instagram.com/_chichiq_">@_chichiq_</a> · <a href="https://facebook.com/456780867515862">Facebook</a></div></div></footer>
+<div class="fab"><a class="btn" href="tel:+380731610480">📞 Записатися</a><a class="btn ghost" style="background:#fff" href="https://www.google.com/maps/dir/?api=1&destination=48.919375,24.702559">Маршрут</a></div>
+
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
+const hd=document.getElementById('hd');addEventListener('scroll',()=>hd.classList.toggle('sc',scrollY>10),{passive:true});
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{document.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));t.classList.add('on');const f=t.dataset.f;document.querySelectorAll('.svc').forEach(s=>s.classList.toggle('hide',f!=='all'&&s.dataset.c!==f))});
+const rv=document.getElementById('rev');document.querySelectorAll('.arr').forEach(a=>a.onclick=()=>rv.scrollBy({left:a.dataset.d*rv.clientWidth*.8,behavior:'smooth'}));
+const d=['Неділя','Понеділок','Вівторок','Середа','Четвер','Пʼятниця','Субота'],now=new Date(new Date().toLocaleString('en-US',{timeZone:'Europe/Kyiv'})),td=now.getDay();
+document.getElementById('hrs').innerHTML=[1,2,3,4,5,6,0].map(i=>`<tr class="${i===td?'today':''}"><td>${d[i]}</td><td>09:00–21:00</td></tr>`).join('');
+const h=now.getHours(),op=h>=9&&h<21;document.getElementById('st').classList.toggle('cl',!op);document.getElementById('stt').textContent=op?'Зараз відчинено · до 21:00':'Зараз зачинено · відкриємось о 09:00';
+</script>
+</body>
+</html>
